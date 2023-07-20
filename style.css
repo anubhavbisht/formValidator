@@ -62,9 +62,8 @@ h2 {
 }
 
 .form-control small {
-  visibility: hidden;
-  position: absolute;
-  bottom: 0;
+  display: none;
+  top: 30;
   left: 0;
   color: var(--error);
 }
@@ -82,14 +81,14 @@ h2 {
   margin-top: 20px;
 }
 
-/* .form-control.success input {
-    border-color: var(--success);
-  }
-  
-  .form-control.error input {
-    border-color: var(--error);
-  } */
+.form-control.success input {
+  border-color: var(--success);
+}
 
-/* .form-control.error small {
-    visibility: visible;
-  } */
+.form-control.error input {
+  border-color: var(--error);
+}
+
+.form-control.error small {
+  display: block;
+}
