@@ -33,7 +33,7 @@ function checkEmpty(inputArray) {
   let notEmpty = false;
   inputArray.forEach((input) => {
     if (input.value.trim() === "") {
-      showError(input, generateElementName(input));
+      showError(input, `${generateElementName(input)} is required`);
       notEmpty = true;
     } else {
       showSuccess(input);
