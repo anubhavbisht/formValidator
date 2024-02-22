@@ -75,6 +75,7 @@ function matchPassword(password1, password2) {
 
 document.addEventListener("submit", (e) => {
   e.preventDefault();
+  console.log('Validating inputs')
   if (!checkEmpty([username, email, password, confirmedPassword])) {
     checkEmail(email);
     checkLength(username, 5, 15);
